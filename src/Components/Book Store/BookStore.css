@@ -1,0 +1,154 @@
+.book-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;  /* Ensures the logout button is positioned relative to this container */
+
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.book-card {
+  width: 200px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.book-card h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 600px; /* Increased width for landscape view */
+  border-radius: 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row; /* Image and details side by side */
+  gap: 30px; /* Space between the image and details */
+}
+
+.popup-content img {
+  width: 250px; /* Set a fixed width for the image */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.popup-details {
+  display: flex;
+  flex-direction: column; /* Ensures vertical alignment of text */
+  justify-content: flex-start;
+  gap: 20px; /* Increased space between text items */
+  max-width: 300px; /* Restricts the width of the text container */
+}
+
+.popup-details h2, 
+.popup-details p {
+  margin: 0;
+  color: #333;
+}
+
+.popup-details h2 {
+  font-size: 24px; /* Larger font for book title */
+}
+
+.popup-details p {
+  font-size: 16px; /* Normal text size for other details */
+  color: #555;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start; /* Align button to the top */
+  margin-top: 20px; /* Added margin to the button */
+}
+
+.popup-content button:hover {
+  background-color: #555;
+}
+
+.popup-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-details li {
+  margin-bottom: 25px; /* Increased space between list items */
+}
+
+.popup-details h2, 
+.popup-details p {
+  margin: 0;
+  color: #333;
+  text-align: left;
+}
+
+.popup-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.logout-button {
+  position: absolute;      /* Position the button relative to the parent container */
+  top: 40px;               /* Distance from the top */
+  right: 30px;             /* Distance from the right */
+  padding: 10px 20px;
+  background-color: #0d4879;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+

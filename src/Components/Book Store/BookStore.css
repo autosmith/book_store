@@ -139,16 +139,40 @@ h1 {
   color: #555;
 }
 
+/* Add this to your BookStore.css file */
 .logout-button {
   position: absolute;      /* Position the button relative to the parent container */
   top: 40px;               /* Distance from the top */
   right: 30px;             /* Distance from the right */
   padding: 10px 20px;
-  background-color: #0d4879;
+  background-color: #0e4c8f;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.logout-button.clicked {
+  animation: shrinkFadeOut 0.6s forwards;
+}
+
+@keyframes shrinkFadeOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}

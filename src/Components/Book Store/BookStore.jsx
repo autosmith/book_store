@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // <-- Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './BookStore.css';
 
 const BookStore = () => {
   const [selectedBook, setSelectedBook] = useState(null);
   const [bookData, setBookData] = useState([]);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const navigate = useNavigate(); // <-- Initialize navigate for redirection
+  const [isLogoutClicked, setIsLogoutClicked] = useState(false); // <-- State to trigger animation
+  const navigate = useNavigate(); // Initialize navigate for redirection
 
   // Fetch books data from the API for each book
   useEffect(() => {
@@ -34,20 +35,28 @@ const BookStore = () => {
     setSelectedBook(null);
   };
 
-  // Function to handle logout and redirect to login/signup page
+  // Function to handle logout and redirect to login/signup page with animation
   const handleLogout = () => {
     console.log('User logged out');
-    // Clear any session/token storage if necessary, e.g.,
-    // localStorage.removeItem('userToken');
-    navigate('/loginsignup'); // <-- Redirect to the login/signup page
+    setIsLogoutClicked(true); // Trigger animation
+
+    // Delay redirect to match animation duration (0.6s)
+    setTimeout(() => {
+      navigate('/loginsignup');
+    }, 600); // 600ms = 0.6s
   };
 
   return (
     <div className="book-store">
       <h1>Online Book Archives</h1>
 
-      {/* Logout button */}
-      <button onClick={handleLogout} className="logout-button">Logout</button> {/* <-- Logout Button */}
+      {/* Logout button with animation */}
+      <button
+        onClick={handleLogout}
+        className={`logout-button ${isLogoutClicked ? 'clicked' : ''}`} // Add 'clicked' class if logout is triggered
+      >
+        Logout
+      </button>
 
       <div className="book-grid">
         {bookData.map((book) => (

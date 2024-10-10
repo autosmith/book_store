@@ -1,0 +1,39 @@
+.not-found-page {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .not-found-page h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ff6b6b; /* Red color for the error message */
+  }
+  
+  .not-found-page p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #666; /* Light grey for subtext */
+  }
+  
+  .not-found-page p:last-child {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

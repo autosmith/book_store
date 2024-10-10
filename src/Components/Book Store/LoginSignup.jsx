@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Step 1: Import useNavigate
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import './LoginSignup.css'; // Import the CSS file
 
 const App = () => {
   const [formType, setFormType] = useState('login'); // 'login', 'signup', or 'forgotPassword'
@@ -11,7 +12,7 @@ const App = () => {
   });
   const [message, setMessage] = useState('');
 
-  const navigate = useNavigate(); // Step 2: Initialize useNavigate
+  const navigate = useNavigate(); // Initialize useNavigate
 
   // Handle form data changes
   const handleChange = (e) => {
@@ -113,10 +114,10 @@ const App = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div className="container">
       <h1>{formType === 'login' ? 'Login' : formType === 'signup' ? 'Sign Up' : 'Forgot Password'}</h1>
 
-      <form onSubmit={handleSubmit} style={styles.form}>
+      <form onSubmit={handleSubmit} className="form">
         {(formType === 'signup' || formType === 'login') && (
           <>
             <input
@@ -126,7 +127,7 @@ const App = () => {
               value={formData.username}
               onChange={handleChange}
               required
-              style={styles.input}
+              className="input"
             />
           </>
         )}
@@ -139,7 +140,7 @@ const App = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              style={styles.input}
+              className="input"
             />
           </>
         )}
@@ -150,7 +151,7 @@ const App = () => {
           value={formData.password}
           onChange={handleChange}
           required
-          style={styles.input}
+          className="input"
         />
 
         {formType === 'forgotPassword' && (
@@ -161,72 +162,24 @@ const App = () => {
             value={formData.confirmNewPassword}
             onChange={handleChange}
             required
-            style={styles.input}
+            className="input"
           />
         )}
 
-        <button type="submit" style={styles.button}>
+        <button type="submit" className="button">
           {formType === 'login' ? 'Login' : formType === 'signup' ? 'Sign Up' : 'Reset Password'}
         </button>
       </form>
 
-      <p style={styles.message}>{message}</p>
+      <p className="message">{message}</p>
 
-      <div style={styles.toggleContainer}>
-        {formType !== 'login' && <button onClick={() => changeFormType('login')} style={styles.toggleButton}>Login</button>}
-        {formType !== 'signup' && <button onClick={() => changeFormType('signup')} style={styles.toggleButton}>Sign Up</button>}
-        {formType !== 'forgotPassword' && <button onClick={() => changeFormType('forgotPassword')} style={styles.toggleButton}>Forgot Password</button>}
+      <div className="toggleContainer">
+        {formType !== 'login' && <button onClick={() => changeFormType('login')} className="toggleButton">Login</button>}
+        {formType !== 'signup' && <button onClick={() => changeFormType('signup')} className="toggleButton">Sign Up</button>}
+        {formType !== 'forgotPassword' && <button onClick={() => changeFormType('forgotPassword')} className="toggleButton">Forgot Password</button>}
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    width: '300px',
-    margin: '0 auto',
-    padding: '20px',
-    textAlign: 'center',
-    borderRadius: '10px',
-    backgroundColor: '#f5f5f5',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
-  },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '10px',
-  },
-  input: {
-    padding: '10px',
-    borderRadius: '5px',
-    border: '1px solid #ccc',
-    fontSize: '16px',
-  },
-  button: {
-    padding: '10px',
-    backgroundColor: '#007BFF',
-    color: 'white',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    fontSize: '16px',
-  },
-  message: {
-    marginTop: '20px',
-    color: 'red',
-  },
-  toggleContainer: {
-    marginTop: '20px',
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
-  toggleButton: {
-    background: 'none',
-    border: 'none',
-    color: '#007BFF',
-    cursor: 'pointer',
-    fontSize: '14px',
-  },
 };
 
 export default App;

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;  /* Ensures the logout button is positioned relative to this container */
+  position: relative;
 
   padding: 20px;
 }

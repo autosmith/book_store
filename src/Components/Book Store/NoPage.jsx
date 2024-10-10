@@ -1,4 +1,5 @@
 import React from 'react';
+import './NoPage.css'; // Import the CSS file
 
 const NotFoundPage = () => {
   return (

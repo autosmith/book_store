@@ -42,7 +42,7 @@ const BookStore = () => {
 
     // Delay redirect to match animation duration (0.6s)
     setTimeout(() => {
-      navigate('/loginsignup');
+      navigate('/login');
     }, 600); // 600ms = 0.6s
   };
 

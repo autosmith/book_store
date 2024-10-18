@@ -1,55 +1,56 @@
 .container {
-    position: absolute;      /* Position relative to the parent container */
-    top: 15%;               /* Distance from the top */
-    right: 38%;             /* Distance from the right */
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #f3f3c9;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .message {
-    margin-top: 20px;
-    color: rgb(0, 0, 0);
-  }
-  
-  .toggleContainer {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .toggleButton {
-    background: none;
-    border: none;
-    color: #007bff;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
+  position: absolute;      /* Position relative to the parent container */
+  top: 50%;                /* 50% from the top of the viewport */
+  left: 50%;               /* 50% from the left of the viewport */
+  transform: translate(-50%, -50%); /* Shift back by 50% to perfectly center */
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f3f3c9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.message {
+  margin-top: 20px;
+  text-transform: lowercase;
+  color: rgb(0, 0, 0);
+}
+
+.toggleContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}

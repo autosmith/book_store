@@ -1,0 +1,105 @@
+[
+  {
+    "_id": "1",
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "rating": 4.8,
+    "genre": "Fiction",
+    "description": "Set in the Deep South, this Pulitzer Prize-winning novel explores issues of racism and injustice through the eyes of a young girl.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/1.jpg"
+  },
+  {
+    "_id": "2",
+    "bookName": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "rating": 4.7,
+    "genre": "Fantasy",
+    "description": "This high fantasy novel follows a hobbit, a wizard, a dwarf, and a human as they embark on a perilous journey to destroy the One Ring.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/2.jpg"
+  },
+  {
+    "_id": "3",
+    "bookName": "1984",
+    "author": "George Orwell",
+    "rating": 4.6,
+    "genre": "Dystopian",
+    "description": "This classic dystopian novel depicts a totalitarian future society where independent thought is discouraged and citizens are constantly surveilled.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/3.jpg"
+  },
+  {
+    "_id": "4",
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "rating": 4.5,
+    "genre": "Romance",
+    "description": "This classic romance novel follows the lives of the Bennett sisters as they navigate love, family, and social status in 19th-century England.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/4.jpg"
+  },
+  {
+    "_id": "5",
+    "bookName": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "rating": 4.4,
+    "genre": "Dystopian",
+    "description": "In a post-apocalyptic future, this novel follows a young girl who volunteers to participate in a deadly game where contestants must fight to the death.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/5.jpg"
+  },
+  {
+    "_id": "6",
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "rating": 4.3,
+    "genre": "Coming-of-Age",
+    "description": "This classic coming-of-age novel follows a disillusioned teenager as he navigates the challenges of adolescence and grapples with the idea of growing up.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/6.jpg"
+  },
+  {
+    "_id": "7",
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "rating": 4.2,
+    "genre": "Fiction",
+    "description": "Set in the roaring twenties, this novel explores themes of love, greed, and the American Dream through the eyes of a young man who becomes infatuated with his wealthy neighbor.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/7.jpg"
+  },
+  {
+    "_id": "8",
+    "bookName": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "rating": 4.1,
+    "genre": "Dystopian",
+    "description": "In a totalitarian future society, this novel follows a handmaid who is forced into reproductive servitude and must find a way to escape.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/8.jpg"
+  },
+  {
+    "_id": "9",
+    "bookName": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "rating": 4.0,
+    "genre": "Gothic Horror",
+    "description": "This classic novel explores the themes of vanity, morality, and the supernatural through the story of a young man who sells his soul for eternal youth and beauty.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/9.jpeg"
+  },
+  {
+    "_id": "10",
+    "bookName": "The Adventures of Huckleberry Finn",
+    "author": "Mark Twain",
+    "rating": 4.0,
+    "genre": "Adventure",
+    "description": "This classic American novel follows a young boy and a runaway slave as they travel down the Mississippi River and confront issues of racism and morality.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/10.jpeg"
+  },
+  {
+    "_id": "11",
+    "bookName": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "rating": 3.9,
+    "genre": "Adventure",
+    "description": "This classic adventure novel follows a man who seeks revenge against those who wronged him after he is imprisoned and later becomes wealthy.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.cooy",
+    "rating": 3.8,
+    "genre": "Historical Fiction",
+    "description": "This epic novel follows the lives of several families during the Napoleonic Wars and explores themes of love, family, and power.",
+    "imageUrl": "https://addbookstore.s3.amazonaws.com/12.jpg"
+  }
+]
